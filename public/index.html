@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>File Upload</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">File Upload</h1>
+    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+      <label for="fileInput" class="custom-file-upload">
+        Choose files
+      </label>
+      <input type="file" name="file" id="fileInput" multiple>
+      <button type="submit">Upload</button>
+    </form>
+    <div id="fileList" class="file-list">
+      <p>Selected Files:</p>
+      <div id="preview"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
